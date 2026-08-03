@@ -1,5 +1,4 @@
 from huggingface_hub import InferenceClient
-
 HF_TOKEN = "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"
 
 client = InferenceClient(api_key=HF_TOKEN)
@@ -13,7 +12,6 @@ def summarize_notes(My_notes):
         max_tokens=500
     )
     return response.choices[0].message.content
-
 
 if __name__ == '__main__':
     My_notes = input("Enter your notes: ")
