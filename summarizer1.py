@@ -1,6 +1,7 @@
 from huggingface_hub import InferenceClient
-HF_TOKEN = "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"
+import streamlit as st
 
+HF_TOKEN = st.secrets["HF_TOKEN"]
 client = InferenceClient(api_key=HF_TOKEN)
 
 def summarize_notes(My_notes):
