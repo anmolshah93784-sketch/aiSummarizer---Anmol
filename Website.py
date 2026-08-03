@@ -16,7 +16,7 @@ def get_local_image_base64(image_path):
     with open(image_path, "rb") as img_file:
         return base64.b64encode(img_file.read()).decode()
 
-IMAGE_PATH = r"c:\Users\Anjali\Downloads\bg.jpg.jpg"
+IMAGE_PATH = "bg.jpg"
 
 try:
     if os.path.exists(IMAGE_PATH):
