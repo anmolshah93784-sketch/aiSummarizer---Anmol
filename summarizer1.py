@@ -1,5 +1,5 @@
 from huggingface_hub import InferenceClient
-HF_TOKEN = "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"
+HF_TOKEN = "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"
 
 client = InferenceClient(api_key=HF_TOKEN)
 
