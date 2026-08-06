@@ -6,7 +6,7 @@ from summarizer1 import summarize_notes
 
 # 1.heading
 st.set_page_config(
-    page_title="AKGEC AI Summarizer",
+    page_title="Anmol AI Summarizer",
     page_icon="📚",
     layout="centered"
 )
@@ -61,7 +61,7 @@ except Exception as e:
     pass
 
 # 3. set (UI)
-st.markdown("<h1 class='main-title'>📚 AKGEC AI Notes Summarizer</h1>", unsafe_allow_html=True)
+st.markdown("<h1 class='main-title'>📚 Anmol AI Notes Summarizer</h1>", unsafe_allow_html=True)
 st.write("<p style='text-align: center; color: #E0E0E0;'>Get instant exam-ready bullet points from your senior AI teacher!</p>", unsafe_allow_html=True)
 
 user_notes = st.text_area("📄 Paste your long college notes below:", height=180, placeholder="Type or paste your content here...")
