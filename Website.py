@@ -64,7 +64,7 @@ except Exception as e:
 st.markdown("<h1 class='main-title'>📚 AI Notes Summarizer</h1>", unsafe_allow_html=True)
 st.write("<p style='text-align: center; color: #E0E0E0;'>Get instant exam-ready points from your senior AI teacher!</p>", unsafe_allow_html=True)
 st.write("<p style='text-align: center; color: #E0E0E0;'>Also get some related exam-ready Q/A (automatically).</p>", unsafe_allow_html=True)
-st.write("<p style='text-align: center; color: #E0E0E0;'>......................summarizer by anmol shah</p>", unsafe_allow_html=True)
+st.write("<p style='text-align: center; color: #E0E0E0;'>...summarizer by Anmol shah...</p>", unsafe_allow_html=True)
 user_notes = st.text_area("📄 Type or paste your long notes below:", height=180, placeholder="Type or paste your content here...")
 
 if st.button("✨ Generate AI Summary", use_container_width=True):
