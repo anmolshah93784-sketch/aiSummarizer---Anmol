@@ -6,7 +6,7 @@ from summarizer1 import summarize_notes
 
 # 1.heading
 st.set_page_config(
-    page_title="Anmol AI Summarizer",
+    page_title="Anmol AI Summarizer cum questions solver",
     page_icon="📚",
     layout="centered"
 )
@@ -62,13 +62,13 @@ except Exception as e:
 
 # 3. set (UI)
 st.markdown("<h1 class='main-title'>📚 Anmol AI Notes Summarizer</h1>", unsafe_allow_html=True)
-st.write("<p style='text-align: center; color: #E0E0E0;'>Get instant exam-ready bullet points from your senior AI teacher!</p>", unsafe_allow_html=True)
+st.write("<p style='text-align: center; color: #E0E0E0;'>Get instant exam-ready points from your senior AI teacher!</p>", unsafe_allow_html=True)
 
-user_notes = st.text_area("📄 Paste your long college notes below:", height=180, placeholder="Type or paste your content here...")
+user_notes = st.text_area("📄 Type or paste your long notes/questions below:", height=180, placeholder="Type or paste your content here...")
 
 if st.button("✨ Generate AI Summary", use_container_width=True):
     if user_notes.strip() != "":
-        with st.spinner("AI Teacher is reading your notes... Please wait..."):
+        with st.spinner("AI Teacher is reading your notes/questions... Please wait..."):
             summary_result = summarize_notes(user_notes)
             st.success("🎯 Your Exam-Ready Points:")
             st.write(summary_result)
