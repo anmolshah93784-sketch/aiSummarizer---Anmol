@@ -71,7 +71,7 @@ if st.button("✨ Generate AI Summary", use_container_width=True):
     if user_notes.strip() != "":
         with st.spinner("AI Teacher is reading your notes... Please wait..."):
             summary_result = summarize_notes(user_notes)
-            st.success("🎯 Your Exam-Ready Points:")
+            st.markdown("<h3 style='color: #FFD700;'>🎯 Your Exam-Ready Points:</h3>", unsafe_allow_html=True)
             st.write(summary_result)
             
             # PDF button
