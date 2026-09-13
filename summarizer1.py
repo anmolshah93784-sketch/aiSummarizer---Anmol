@@ -8,7 +8,7 @@ def summarize_notes(My_notes):
     response = client.chat.completions.create(
         model="Qwen/Qwen2.5-7B-Instruct",
         messages=[
-            {"role": "user", "content": f"You are a professor and you have to summarize the notes in bullet points and At last, Also give some notes related exam ready questions with answers:\n\n{My_notes}"}
+            {"role": "user", "content": f"You are a professor and you have to summarize the given notes in bullet points step by step and also give some notes related exam ready questions & answers or solve numericals if asked:\n\n{My_notes}"}
         ],
         max_tokens=500
     )
